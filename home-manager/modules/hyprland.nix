@@ -16,6 +16,11 @@
 				"$mainMod, G, exec, rofi -show drun"
 			];
 
+			exec-once = [
+				"swww init"
+				"swww img --transition-type random ~/nix/home-manager/swww/wallpapers/cat.jpg"
+			];
+
 			general = {
 				"col.active_border" = "$inverse_primary";
 			};

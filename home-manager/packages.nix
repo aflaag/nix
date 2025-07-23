@@ -8,7 +8,6 @@
 
 		home.packages = with pkgs; [
 			# desktop
-			swww
 			rofimoji
 			inputs.matugen.packages.${system}.default
 

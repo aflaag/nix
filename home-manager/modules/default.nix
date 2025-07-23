@@ -2,6 +2,7 @@
 	imports = [
 		./rofi
 		./matugen
+		./swww
 
 		./hyprland.nix
 		./git.nix
