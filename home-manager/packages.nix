@@ -5,6 +5,7 @@
 		# desktop
 		swww
 		rofimoji
+		inputs.matugen.packages.$(system).default
 
 		# programs
 		neovim

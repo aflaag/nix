@@ -15,6 +15,10 @@
 				"$mainMod, L, exec, kitty --directory ~"
 				"$mainMod, G, exec, rofi -show drun"
 			];
+
+			general = {
+				"col.active_border" = "$on_primary_container";
+			};
 		};
 	};
 }

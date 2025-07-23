@@ -1,5 +1,0 @@
-{
-	programs.matugen = {
-		enable = true;
-	};
-}

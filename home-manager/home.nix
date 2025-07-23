@@ -3,8 +3,6 @@
 		./modules	
 
 		./packages.nix
-	
-		#inputs.matugen.nixosModules.default
 	];
 
 	home = {

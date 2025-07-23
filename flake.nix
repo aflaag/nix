@@ -9,9 +9,7 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		matugen = {
-			url = "github:/InioX/Matugen";
-		};
+		matugen.url = "github:InioX/Matugen";
 	};
 
 	outputs = { nixpkgs, home-manager, matugen, ... }:
@@ -20,14 +18,15 @@
 		in {
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			inherit system;
-			modules = [ ./nixos/configuration.nix ];
+			modules = [
+				./nixos/configuration.nix
+			];
 		};
 
 		homeConfigurations.aless = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
 			modules = [
 				./home-manager/home.nix
-				matugen.nixosModules.default
 			];
 		};
 	};

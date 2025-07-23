@@ -1,6 +1,7 @@
 {
 	imports = [
 		./rofi
+		./matugen
 
 		./hyprland.nix
 		./git.nix
