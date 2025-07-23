@@ -12,7 +12,7 @@
 		matugen.url = "github:InioX/Matugen";
 	};
 
-	outputs = { nixpkgs, home-manager, matugen, ... }:
+	outputs = { nixpkgs, home-manager, matugen, ... }@inputs:
 		let
 			system = "x86_64-linux";
 		in {
@@ -25,6 +25,7 @@
 
 		homeConfigurations.aless = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
+			extraSpecialArgs = { inherit inputs; };
 			modules = [
 				./home-manager/home.nix
 			];

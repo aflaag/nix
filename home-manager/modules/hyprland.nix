@@ -17,7 +17,7 @@
 			];
 
 			general = {
-				"col.active_border" = "$on_primary_container";
+				"col.active_border" = "$inverse_primary";
 			};
 		};
 	};
