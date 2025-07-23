@@ -1,5 +1,5 @@
 # TODO
 
-- fix gh 
+- fix hyprland default directory
 - add packer neovim
 

@@ -12,7 +12,7 @@
 			};
 
 			bind = [
-				"$mainMod, L, exec, kitty"
+				"$mainMod, L, exec, kitty --directory ~"
 				"$mainMod, G, exec, rofi -show drun"
 			];
 		};
