@@ -13,8 +13,5 @@
 		bat
 		fzf
 		ripgrep
-
-		# others
-		gh
 	];
 }
