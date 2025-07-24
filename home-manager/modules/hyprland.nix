@@ -8,9 +8,17 @@
 
 			source = "~/.config/hypr/colors.conf";
 
+                        gestures = {
+                            workspace_swipe = true;
+                        };
+
 			input = {
 				kb_layout = "it";
 				kb_options = "lv3:ralt_switch";
+
+                                touchpad = {
+                                    natural_scroll = true;
+                                };
 			};
 
 			bind = [
@@ -61,6 +69,7 @@
 
 			bindm = [
 				"$mainMod, mouse:272, movewindow"
+				"$mainMod, mouse:273, resizewindow"
 			];
 
 			windowrulev2 = [

@@ -26,6 +26,7 @@
 		wget
 		tree
 		htop
+                pfetch
 	];
 
 	fonts.packages = with pkgs; [

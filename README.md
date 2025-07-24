@@ -3,23 +3,24 @@
 ## general
 
 - FORMAT ALL THE FILES CORRECTLY
+- finish checking configuration.nix.bak
+- finish migrating previous config (especially ld stuff in configuration.nix)
 
 ## hyprland
 
-- add gestures
-- fix scroll speed
+- change scroll sensitivity
 - add xcolor alternative binding
 - add screenshot thing binding
+
+## thunar
+
+- make it look decent honestly
 
 ## home-manager
 
 - remove matugen folder (?)
 - fix the flake for matugen or move the config file somewhere else
-
-## misc
-
-- find xcolor/xclip alternative
-- screenshot thing
+    - maybe move it under nix and allow homemanager to do the symlink?
 
 ## matugen
 
@@ -32,9 +33,22 @@
 
 ## kitty
 
+- make it look decent
 - fix kitty no-cursor shell_integration
 
 ## neovim
 
-- add neovim plugin manager (packer is dead)
+- install node for coc
+- check if the error i encounter when opening init.lua is found anywhere else
+- change theme with matugen somehow?
+
+## zsh
+
+- make it use matugen somehow?
+
+## misc
+
+- find xcolor/xclip alternative
+- screenshot thing
+- fix tex
 
