@@ -6,6 +6,8 @@
 		settings = {
 			"$mainMod" = "SUPER";
 
+			source = "~/.config/hypr/hyprland-colors.conf";
+
 			input = {
 				kb_layout = "it";
 				kb_options = "lv3:ralt_switch";

@@ -1,7 +1,7 @@
 {
 	imports = [
 		./rofi
-		./matugen
+		#./matugen
 		./swww
 
 		./hyprland.nix

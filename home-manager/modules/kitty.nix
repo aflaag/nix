@@ -3,6 +3,8 @@
 		enable = true;
 
 		settings = {
+			include = "~/.config/kitty/kitty-colors.conf";
+
 			shell = "${pkgs.zsh}/bin/zsh";
 
 			font_family = "CaskaydiaMono Nerd Font";
@@ -13,6 +15,8 @@
 			cursor_blink_interval = 0;
 			shell_integration = "no-cursor";
 			initial_cwd = "~";
+
+			background_opacity = 0.8;
 		};
 
 		shellIntegration.enableZshIntegration = true;
