@@ -4,6 +4,8 @@
 
 		# Programs
 		firefox
+		xfce.thunar
+		pavucontrol
 	
 		# Desktkop
 		hyprland
@@ -13,6 +15,10 @@
 		dunst
 		libnotify
 		papirus-icon-theme
+		pamixer
+		brightnessctl
+		gtk3
+		gtk4
 
 		# CLI utils
 		util-linux

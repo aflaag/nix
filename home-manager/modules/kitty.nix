@@ -3,7 +3,7 @@
 		enable = true;
 
 		settings = {
-			include = "~/.config/kitty/kitty-colors.conf";
+			include = "~/.config/kitty/colors.conf";
 
 			shell = "${pkgs.zsh}/bin/zsh";
 
@@ -15,8 +15,6 @@
 			cursor_blink_interval = 0;
 			shell_integration = "no-cursor";
 			initial_cwd = "~";
-
-			background_opacity = 0.8;
 		};
 
 		shellIntegration.enableZshIntegration = true;
