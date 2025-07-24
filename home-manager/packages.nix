@@ -3,6 +3,7 @@
 	imports = [
 		inputs.matugen.nixosModules.default
 	];
+
 	config = {
 		nixpkgs.config.allowUnfree = true;
 

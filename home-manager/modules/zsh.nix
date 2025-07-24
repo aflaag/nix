@@ -13,9 +13,9 @@
 			rebuild-home = "home-manager switch --flake path:/home/aless/nix";
 		};
 
-		initContent = ''
-			eval "$(zoxide init --cmd cd zsh)"
-		'';
+		#initContent = ''
+		#	eval "$(zoxide init --cmd cd zsh)"
+		#'';
 
 		oh-my-zsh = {
 			enable = true;
