@@ -59,8 +59,21 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
+
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.suppor32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
+  security.rtkit.enable = true;
+
+  servies.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.aless = {

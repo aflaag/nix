@@ -3,12 +3,14 @@
 ## general
 
 - FORMAT ALL THE FILES CORRECTLY
-- finish checking configuration.nix.bak
 - finish migrating previous config (especially ld stuff in configuration.nix)
 
 ## hyprland
 
-- change scroll sensitivity
+- remove initial message (should be fixed but check it)
+- fix firefox wrt dpi i think?
+- change scroll sensitivity?
+- horizontal scroll is kinda janky
 - add xcolor alternative binding
 - add screenshot thing binding
 

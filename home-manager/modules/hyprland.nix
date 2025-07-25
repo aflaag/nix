@@ -12,6 +12,10 @@
                             workspace_swipe = true;
                         };
 
+                        ecosystem = {
+                            no_update_news = true;
+                        };
+
 			input = {
 				kb_layout = "it";
 				kb_options = "lv3:ralt_switch";
