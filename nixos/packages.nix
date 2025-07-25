@@ -6,6 +6,7 @@
 		firefox
 		xfce.thunar
 		pavucontrol
+                telegram-desktop
 	
 		# Desktkop
 		hyprland
@@ -15,10 +16,12 @@
 		dunst
 		libnotify
 		papirus-icon-theme
+                adwaita-icon-theme
 		pamixer
 		brightnessctl
 		gtk3
 		gtk4
+                hyprpicker
 
 		# CLI utils
 		util-linux

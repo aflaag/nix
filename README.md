@@ -2,8 +2,10 @@
 
 ## general
 
+- setup automatic garbage collection
 - FORMAT ALL THE FILES CORRECTLY
 - finish migrating previous config (especially ld stuff in configuration.nix)
+- consider using yazi
 
 ## hyprland
 
@@ -27,11 +29,12 @@
 ## matugen
 
 - make gtk matugen work (post_hook command does not work)
-- setup waybar
 
 ## waybar
 
-- set it up
+- migrate to home-manager
+- check bluetooth
+- set up better colors
 
 ## kitty
 

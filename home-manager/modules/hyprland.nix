@@ -45,7 +45,7 @@
 				"CTRL_ALT, LEFT, workspace, -1"
 				"$mainMod_SHIFT, 1, movetoworkspacesilent, 1"
 				"$mainMod_SHIFT, 2, movetoworkspacesilent, 2"
-				"$mainMod_SHIFT, 3, movetoworkspacesilent, 4"
+				"$mainMod_SHIFT, 3, movetoworkspacesilent, 3"
 				"$mainMod_SHIFT, 4, movetoworkspacesilent, 4"
 				"$mainMod_SHIFT, 5, movetoworkspacesilent, 5"
 				"$mainMod_SHIFT, 6, movetoworkspacesilent, 6"
