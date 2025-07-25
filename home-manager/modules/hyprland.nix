@@ -69,6 +69,7 @@
 				"CTRL, SPACE, exec, dunstctl close"
 				"$mainMod_SHIFT, F, exec, firefox"
 				"$mainMod, E, exec, thunar"
+                                "$mainMod, W, exec, waybar"
 			];
 
 			bindm = [

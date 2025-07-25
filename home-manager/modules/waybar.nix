@@ -14,6 +14,7 @@
             "hyprland/window" = {
                 format = "{}";
                 max-length = 60;
+                tooltip = false;
             };
 
             "hyprland/workspaces" = {

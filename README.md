@@ -2,6 +2,7 @@
 
 ## general
 
+- setup wlogout
 - setup automatic garbage collection
 - FORMAT ALL THE FILES CORRECTLY
 - finish migrating previous config (especially ld stuff in configuration.nix)
@@ -9,8 +10,7 @@
 
 ## hyprland
 
-- add command to reload waybar
-- match gaps with waybar or the other way around idk
+- match gaps with waybar (and match them with "internal" gaps)
 - remove initial message (should be fixed but check it)
 - fix firefox wrt dpi i think?
 - change scroll sensitivity?
@@ -33,6 +33,7 @@
 
 ## waybar
 
+- add wlogout
 - set up audio
 - check bluetooth
 - remove hyprland/window when there are no active windows
@@ -55,7 +56,6 @@
 
 ## misc
 
-- find xcolor/xclip alternative
-- screenshot thing
+- screenshot program
 - fix tex
 
