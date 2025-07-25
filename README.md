@@ -9,11 +9,13 @@
 
 ## hyprland
 
+- add waybar at startup
+- add command to reload waybar
+- match gaps with waybar or the other way around idk
 - remove initial message (should be fixed but check it)
 - fix firefox wrt dpi i think?
 - change scroll sensitivity?
 - horizontal scroll is kinda janky
-- add xcolor alternative binding
 - add screenshot thing binding
 
 ## thunar
@@ -32,7 +34,7 @@
 
 ## waybar
 
-- migrate to home-manager
+- set up audio
 - check bluetooth
 - set up better colors
 
