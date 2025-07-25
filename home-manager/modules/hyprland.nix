@@ -81,8 +81,7 @@
 			];
 
 			exec-once = [
-				"swww init"
-				"swww img --transition-type random ~/nix/home-manager/swww/wallpapers/cat.jpg"
+                            "waybar"
 			];
 
 			general = {

@@ -28,6 +28,7 @@
 		vim
 		wget
 		tree
+                killall
 		htop
                 pfetch
 	];

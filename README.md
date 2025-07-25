@@ -9,7 +9,6 @@
 
 ## hyprland
 
-- add waybar at startup
 - add command to reload waybar
 - match gaps with waybar or the other way around idk
 - remove initial message (should be fixed but check it)
@@ -36,6 +35,7 @@
 
 - set up audio
 - check bluetooth
+- remove hyprland/window when there are no active windows
 - set up better colors
 
 ## kitty

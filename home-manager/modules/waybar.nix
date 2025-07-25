@@ -7,21 +7,20 @@
             position = "top";
             reload_style_on_change = true;
 
-            modules-left = [ "clock" ];
+            modules-left = [ "hyprland/window" ];
             modules-center = [ "hyprland/workspaces" ];
-            modules-right = [ "group/expand" "bluetooth" "network" "battery" "tray" ];
+            modules-right = [ "group/expand" "network" "battery" "clock" "tray" ];
+
+            "hyprland/window" = {
+                format = "{}";
+                max-length = 60;
+            };
 
             "hyprland/workspaces" = {
                 format = "{name}";
                 persistent-workspaces = {
                     "*" = [ 1 2 3 4 5 ];
                 };
-            };
-
-            clock = {
-                format = "{:%T %d %a}";
-                tooltip = false;
-                interval = 1;
             };
 
             "group/expand" = {
@@ -31,7 +30,7 @@
                     transition-to-left = true;
                     click-to-reveal = true;
                 };
-                modules = [ "custom/expand" "memory" "temperature"];
+                modules = [ "custom/expand" "bluetooth" "memory" "temperature"];
             };
 
             "custom/expand" = {
@@ -84,6 +83,12 @@
                 format-alt = "{icon} {time}";
                 format-icons = [ "󰁻" "󰁼" "󰁾" "󰂀" "󰂂" "󰁹" ];
                 tooltip = false;
+            };
+
+            clock = {
+                format = "{:%T %d %a}";
+                tooltip = false;
+                interval = 1;
             };
 
             tray = {
