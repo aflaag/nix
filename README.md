@@ -2,6 +2,8 @@
 
 ## general
 
+- consider using autocpu-freq
+- consider switching to stable channel
 - setup wlogout
 - setup automatic garbage collection
 - FORMAT ALL THE FILES CORRECTLY
