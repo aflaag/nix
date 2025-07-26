@@ -1,4 +1,4 @@
-{
+{ config, ...}: {
 	programs.zsh = {
 		enable = true;
 
@@ -13,14 +13,11 @@
 			rebuild-home = "home-manager switch --flake path:/home/aless/nix";
 		};
 
-		#initContent = ''
-		#	eval "$(zoxide init --cmd cd zsh)"
-		#'';
-
 		oh-my-zsh = {
 			enable = true;
 			plugins = [ "git" "z"];
-			theme = "robbyrussell";
+                        custom = "${config.home.homeDirectory}/.config/zsh";
+			theme = "robbyrussell_custom";
 		};
 	};
 }

@@ -3,6 +3,7 @@
 ## general
 
 - setup hyprlock
+- change the cursor?
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout
@@ -16,7 +17,6 @@
 
 ## hyprland
 
-- match gaps with waybar (and match them with "internal" gaps)
 - remove initial message (should be fixed but check it)
 - fix firefox wrt dpi i think?
 - change scroll sensitivity?
@@ -39,11 +39,12 @@
 
 ## waybar
 
+- if possible, remove separator when there are no active windows
+- if possible, remove hyprland/window when there are no active windows
 - fix tray menu graphics
 - add wlogout module
 - set up audio
 - check bluetooth
-- remove hyprland/window when there are no active windows
 
 ## dunst
 

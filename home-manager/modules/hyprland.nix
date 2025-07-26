@@ -92,7 +92,12 @@
 				"col.active_border" = "$primary";
                                 gaps_in = 5;
                                 gaps_out = 10;
+
 			};
+
+                        decoration = {
+                            rounding = 10;
+                        };
 		};
 	};
 }
