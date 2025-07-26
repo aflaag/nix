@@ -31,6 +31,7 @@
                 killall
 		htop
                 pfetch
+                wl-clipboard
 	];
 
 	fonts.packages = with pkgs; [

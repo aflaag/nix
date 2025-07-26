@@ -2,6 +2,7 @@
 
 ## general
 
+- setup hyprlock
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout
@@ -9,6 +10,7 @@
 - FORMAT ALL THE FILES CORRECTLY
 - finish migrating previous config (especially ld stuff in configuration.nix)
 - consider using yazi
+- create a pokemon-icat flake/package/whatever idk
 
 ## hyprland
 
@@ -35,11 +37,21 @@
 
 ## waybar
 
-- add wlogout
+- fix tray menu graphics
+- add wlogout module
 - set up audio
 - check bluetooth
 - remove hyprland/window when there are no active windows
-- set up better colors
+
+## dunst
+
+- set up theme
+- matugen colors
+
+## rofi
+
+- set up theme
+- matugen colors
 
 ## kitty
 
@@ -48,9 +60,11 @@
 
 ## neovim
 
-- install node for coc
+- install node for coc (i think there are better alternatives?)
+- change vim-airline?
 - check if the error i encounter when opening init.lua is found anywhere else
 - change theme with matugen somehow?
+- consider switching to nixvim
 
 ## zsh
 

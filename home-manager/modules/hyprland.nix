@@ -70,6 +70,7 @@
 				"$mainMod_SHIFT, F, exec, firefox"
 				"$mainMod, E, exec, thunar"
                                 "$mainMod, W, exec, waybar"
+                                "$mainMod_ALT, C, exec, hyprpicker -a"
 			];
 
 			bindm = [
@@ -86,7 +87,9 @@
 			];
 
 			general = {
-				"col.active_border" = "$inverse_primary";
+				"col.active_border" = "$primary";
+                                gaps_in = 5;
+                                gaps_out = 10;
 			};
 		};
 	};

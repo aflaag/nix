@@ -3,13 +3,13 @@
 		./rofi
 		#./matugen
 		./swww
+                ./waybar
 
 		./hyprland.nix
 		./git.nix
 		./gtk.nix
 		./gh.nix
 		./kitty.nix
-                ./waybar.nix
 		./zoxide.nix
 		./zsh.nix
 	];
