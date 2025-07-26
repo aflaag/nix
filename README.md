@@ -71,5 +71,5 @@
 
 ## zsh
 
-- make it use matugen somehow?
+- understand how to pass the colors to the theme
 
