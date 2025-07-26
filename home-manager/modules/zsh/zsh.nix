@@ -16,8 +16,8 @@
 		oh-my-zsh = {
 			enable = true;
 			plugins = [ "git" "z"];
-                        custom = "${config.home.homeDirectory}/.config/zsh";
-			theme = "robbyrussell_custom";
+                        custom = "${config.home.homeDirectory}/nix/home-manager/modules/zsh";
+			theme = "robbyrussell";
 		};
 	};
 }

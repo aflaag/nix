@@ -4,6 +4,7 @@
 		#./matugen
 		./swww
                 ./waybar
+                ./zsh
 
                 ./firefox.nix
 		./git.nix
@@ -12,6 +13,5 @@
 		./hyprland.nix
 		./kitty.nix
 		./zoxide.nix
-		./zsh.nix
 	];
 }

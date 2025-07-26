@@ -94,10 +94,6 @@
                                 gaps_out = 10;
 
 			};
-
-                        decoration = {
-                            rounding = 10;
-                        };
 		};
 	};
 }
