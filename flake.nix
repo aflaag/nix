@@ -10,6 +10,11 @@
 		};
 
 		matugen.url = "github:InioX/Matugen";
+
+                firefox-addons = {
+                    url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+                    inputs.nixpkgs.follows = "nixpkgs";
+                };
 	};
 
 	outputs = { nixpkgs, home-manager, matugen, ... }@inputs:
@@ -18,17 +23,15 @@
 		in {
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			inherit system;
-			modules = [
-				./nixos/configuration.nix
-			];
+
+			modules = [ ./nixos/configuration.nix ];
 		};
 
 		homeConfigurations.aless = home-manager.lib.homeManagerConfiguration {
 			pkgs = nixpkgs.legacyPackages.${system};
+			modules = [ ./home-manager/home.nix ];
+
 			extraSpecialArgs = { inherit inputs; };
-			modules = [
-				./home-manager/home.nix
-			];
 		};
 	};
 }

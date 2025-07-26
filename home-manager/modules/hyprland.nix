@@ -71,6 +71,8 @@
 				"$mainMod, E, exec, thunar"
                                 "$mainMod, W, exec, waybar"
                                 "$mainMod_ALT, C, exec, hyprpicker -a"
+                                ", Print, exec, hyprshot -m output --clipboard-only"
+                                "$mainMod_ALT, S, exec, hyprshot -m region --clipboard-only --raw | swappy -f -"
 			];
 
 			bindm = [

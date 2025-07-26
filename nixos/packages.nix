@@ -22,6 +22,8 @@
 		gtk3
 		gtk4
                 hyprpicker
+                hyprshot
+                swappy
 
 		# CLI utils
 		util-linux

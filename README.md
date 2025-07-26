@@ -11,6 +11,8 @@
 - finish migrating previous config (especially ld stuff in configuration.nix)
 - consider using yazi
 - create a pokemon-icat flake/package/whatever idk
+- personalize firefox userChrome?
+- fix tex
 
 ## hyprland
 
@@ -69,9 +71,4 @@
 ## zsh
 
 - make it use matugen somehow?
-
-## misc
-
-- screenshot program
-- fix tex
 
