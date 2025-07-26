@@ -2,13 +2,14 @@
 
 * {
     font-size: 12px;
-    font-family: CaskaydiaMono Nerd Font;
+    font-family: CaskaydiaCove Nerd Font;
     font-weight: bold;
 }
 
 window#waybar {
     all:unset;
     color: @primary;
+    padding: 0px 5px;
 }
 
 .modules-left {
@@ -20,7 +21,7 @@ window#waybar {
 }
 
 .modules-right {
-    padding:7px;
+    padding: 7px;
     margin: 10px 10px 5px 0px;
     border-radius: 0px;
     background: alpha(@background,.85);

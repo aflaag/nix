@@ -72,7 +72,9 @@
                                 "$mainMod, W, exec, waybar"
                                 "$mainMod_ALT, C, exec, hyprpicker -a"
                                 ", Print, exec, hyprshot -m output --clipboard-only"
-                                "$mainMod_ALT, S, exec, hyprshot -m region --clipboard-only --raw | swappy -f -"
+                                "$mainMod, S, exec, hyprshot -m region --clipboard-only"
+                                "$mainMod_ALT, S, exec, hyprshot -m region --raw | swappy -f -"
+                                "$mainMod_ALT_SHIFT, L, exec, hyprlock & disown && systemctl suspend"
 			];
 
 			bindm = [
@@ -80,12 +82,18 @@
 				"$mainMod, mouse:273, resizewindow"
 			];
 
+                        bindl = [
+                            ", switch:on:Lid Switch, exec, hyprlock --immediate"
+                            ", switch:off:Lid Switch, exec, hyprlock --immediate"
+                        ];
+
 			windowrulev2 = [
 				"opacity 0.85, class:^(kitty)$"
 			];
 
 			exec-once = [
                             "waybar"
+                            "hyprlock --immediate"
 			];
 
 			general = {

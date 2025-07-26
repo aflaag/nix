@@ -7,7 +7,7 @@
 
 			shell = "${pkgs.zsh}/bin/zsh";
 
-			font_family = "CaskaydiaMono Nerd Font";
+			font_family = "CaskaydiaCove Nerd Font";
 			bold_font = "auto";
 			italic_font = "auto";
 			font_size = 13.0;

@@ -7,7 +7,7 @@
 
 		extraConfig = {
 			show-icons = true;
-			font = "CaskaydiaMono Nerd Font 12";
+			font = "CaskaydiaCove Nerd Font 12";
 			icon-theme = "Papirus Dark";
 		};
 	};

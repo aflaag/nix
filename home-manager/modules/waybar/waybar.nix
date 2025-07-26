@@ -30,7 +30,7 @@
             };
 
             "hyprland/window" = {
-                format = " {}";
+                format = " {} ";
                 max-length = 60;
                 tooltip = false;
             };

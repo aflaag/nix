@@ -2,8 +2,7 @@
 
 ## general
 
-- setup hyprlock
-- change the cursor?
+- CHANGE THE CURSOR
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout
@@ -22,6 +21,11 @@
 - change scroll sensitivity?
 - horizontal scroll is kinda janky
 - add screenshot thing binding
+
+## hyprlock
+
+- setup the theme
+- migrate to home-manager
 
 ## thunar
 

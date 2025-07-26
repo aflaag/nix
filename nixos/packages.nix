@@ -24,6 +24,7 @@
                 hyprpicker
                 hyprshot
                 swappy
+                hyprlock
 
 		# CLI utils
 		util-linux
@@ -34,9 +35,10 @@
 		htop
                 pfetch
                 wl-clipboard
+                git
 	];
 
 	fonts.packages = with pkgs; [
-		pkgs.nerd-fonts.caskaydia-mono
+		pkgs.nerd-fonts.caskaydia-cove
 	];
 }
