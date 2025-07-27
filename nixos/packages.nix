@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
 	environment.systemPackages = with pkgs; [
 		home-manager
 
@@ -36,6 +36,7 @@
                 pfetch
                 wl-clipboard
                 git
+                inputs.pokemon-icat.packages.${pkgs.system}.default
 	];
 
 	fonts.packages = with pkgs; [

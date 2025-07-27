@@ -15,9 +15,11 @@
                     url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
                     inputs.nixpkgs.follows = "nixpkgs";
                 };
+
+                pokemon-icat.url = "github:aflaag/pokemon-icat";
 	};
 
-	outputs = { nixpkgs, home-manager, matugen, ... }@inputs:
+	outputs = { nixpkgs, home-manager, matugen, pokemon-icat, ... }@inputs:
 		let
 			system = "x86_64-linux";
 		in {
@@ -25,6 +27,8 @@
 			inherit system;
 
 			modules = [ ./nixos/configuration.nix ];
+
+                        specialArgs = { inherit inputs; };
 		};
 
 		homeConfigurations.aless = home-manager.lib.homeManagerConfiguration {
