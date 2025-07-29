@@ -36,7 +36,7 @@
                 pfetch
                 wl-clipboard
                 git
-                inputs.pokemon-icat.packages.${pkgs.system}.default
+                # inputs.pokemon-icat.packages.${pkgs.system}.default
 	];
 
 	fonts.packages = with pkgs; [
