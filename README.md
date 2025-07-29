@@ -13,6 +13,7 @@
 - create a pokemon-icat flake/package/whatever idk
 - personalize firefox userChrome?
 - fix tex
+- wtf is `~/.config/rofimoji.rc`
 
 ## hyprland
 
