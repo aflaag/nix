@@ -102,6 +102,17 @@
     libraries = with pkgs; [ ];
   };
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  nix.optimise = {
+    automatic = true;
+    dates = "weekly";
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

@@ -1,23 +1,23 @@
-{ config, ...}: {
-	programs.zsh = {
-		enable = true;
+{ config, ... }: {
+  programs.zsh = {
+    enable = true;
 
-		autosuggestion.enable = true;
-		syntaxHighlighting.enable = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
 
-		shellAliases = {
-			l = "ls -la";
-			rm = "rm -i";
+    shellAliases = {
+      l = "ls -la";
+      rm = "rm -i";
 
-			rebuild-nixos = "sudo nixos-rebuild switch --flake path:/home/aless/nix";
-			rebuild-home = "home-manager switch --flake path:/home/aless/nix";
-		};
+      rebuild-nixos = "sudo nixos-rebuild switch --flake path:/home/aless/nix";
+      rebuild-home = "home-manager switch --flake path:/home/aless/nix";
+    };
 
-		oh-my-zsh = {
-			enable = true;
-			plugins = [ "git" "z"];
-                        custom = "${config.home.homeDirectory}/nix/home-manager/modules/zsh";
-			theme = "robbyrussell";
-		};
-	};
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" "z" ];
+      custom = "${config.home.homeDirectory}/nix/home-manager/modules/zsh";
+      theme = "robbyrussell";
+    };
+  };
 }

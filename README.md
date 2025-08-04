@@ -67,11 +67,8 @@
 
 ## neovim
 
-- install node for coc (i think there are better alternatives?)
-- change vim-airline?
-- check if the error i encounter when opening init.lua is found anywhere else
 - change theme with matugen somehow?
-- consider switching to nixvim
+- consider switching to nvf (?)
 
 ## zsh
 

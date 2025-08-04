@@ -1,21 +1,20 @@
 { pkgs, inputs, ... }: {
-    programs.firefox = {
-        enable = true;
-        profiles.default = {
-		settings = {
-			"browser.ctrlTab.sortByRecentlyUsed" = true;
-		};
-            extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
-                # missing
-                #   emoji
-                #   volume-control
+  programs.firefox = {
+    enable = true;
+    profiles.default = {
+      settings = { "browser.ctrlTab.sortByRecentlyUsed" = true; };
+      extensions.packages =
+        with inputs.firefox-addons.packages."x86_64-linux"; [
+          # missing
+          #   emoji
+          #   volume-control
 
-                bitwarden
-                darkreader
-                simple-tab-groups
-                ublock-origin
-                unpaywall
-            ];
-        };
+          bitwarden
+          darkreader
+          simple-tab-groups
+          ublock-origin
+          unpaywall
+        ];
     };
+  };
 }

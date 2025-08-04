@@ -1,17 +1,15 @@
 { inputs, ... }: {
-	imports = [
-		./modules	
+  imports = [
+    ./modules
 
-		./packages.nix
-	];
+    ./packages.nix
+  ];
 
-	home = {
-		username = "aless";
-		homeDirectory = "/home/aless";
-		stateVersion = "25.11";
+  home = {
+    username = "aless";
+    homeDirectory = "/home/aless";
+    stateVersion = "25.11";
 
-		sessionVariables = {
-			ICON_THEME = "Papirus";
-		};
-	};
+    sessionVariables = { ICON_THEME = "Papirus"; };
+  };
 }

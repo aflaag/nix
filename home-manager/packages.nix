@@ -1,24 +1,21 @@
-{ pkgs, inputs, ... }:
-{
-	imports = [
-		inputs.matugen.nixosModules.default
-	];
+{ pkgs, inputs, ... }: {
+  imports = [ inputs.matugen.nixosModules.default ];
 
-	config = {
-		nixpkgs.config.allowUnfree = true;
+  config = {
+    nixpkgs.config.allowUnfree = true;
 
-		home.packages = with pkgs; [
-			# desktop
-			rofimoji
-			inputs.matugen.packages.${system}.default
+    home.packages = with pkgs; [
+      # desktop
+      rofimoji
+      inputs.matugen.packages.${system}.default
 
-			# programs
-			neovim
+      # programs
+      neovim
 
-			# CLI utils
-			bat
-			fzf
-			ripgrep
-		];
-	};
+      # CLI utils
+      bat
+      fzf
+      ripgrep
+    ];
+  };
 }
