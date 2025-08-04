@@ -2,6 +2,9 @@
     programs.firefox = {
         enable = true;
         profiles.default = {
+		settings = {
+			"browser.ctrlTab.sortByRecentlyUsed" = true;
+		};
             extensions.packages = with inputs.firefox-addons.packages."x86_64-linux"; [
                 # missing
                 #   emoji

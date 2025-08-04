@@ -1,45 +1,50 @@
 { inputs, pkgs, ... }: {
-	environment.systemPackages = with pkgs; [
-		home-manager
+  environment.systemPackages = with pkgs; [
+    home-manager
 
-		# Programs
-		firefox
-		xfce.thunar
-		pavucontrol
-                telegram-desktop
-	
-		# Desktkop
-		hyprland
-		xwayland
-		xdg-desktop-portal-hyprland
-		waybar
-		dunst
-		libnotify
-		papirus-icon-theme
-                adwaita-icon-theme
-		pamixer
-		brightnessctl
-		gtk3
-		gtk4
-                hyprpicker
-                hyprshot
-                swappy
-                hyprlock
+    # Programs
+    firefox
+    xfce.thunar
+    pavucontrol
+    telegram-desktop
 
-		# CLI utils
-		util-linux
-		vim
-		wget
-		tree
-                killall
-		htop
-                pfetch
-                wl-clipboard
-                git
-                # inputs.pokemon-icat.packages.${pkgs.system}.default
-	];
+    # Desktkop
+    hyprland
+    xwayland
+    xdg-desktop-portal-hyprland
+    waybar
+    dunst
+    libnotify
+    papirus-icon-theme
+    adwaita-icon-theme
+    pamixer
+    brightnessctl
+    gtk3
+    gtk4
+    hyprpicker
+    hyprshot
+    swappy
+    hyprlock
 
-	fonts.packages = with pkgs; [
-		pkgs.nerd-fonts.caskaydia-cove
-	];
+    # CLI utils
+    util-linux
+    vim
+    wget
+    tree
+    killall
+    htop
+    pfetch
+    wl-clipboard
+    git
+    unzip
+
+    nodejs
+    python3
+    cargo
+    gcc
+
+    # inputs.pokemon-icat.packages.${pkgs.system}.default
+  ];
+
+  fonts.packages = with pkgs; [ pkgs.nerd-fonts.caskaydia-cove ];
 }

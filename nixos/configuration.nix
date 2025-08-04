@@ -5,13 +5,12 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./packages.nix
+  imports = [ # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ./packages.nix
 
-      ./modules
-    ];
+    ./modules
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -80,21 +79,27 @@
     isNormalUser = true;
     description = "aless";
     extraGroups = [ "networkmanager" "input" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
     shell = pkgs.zsh;
   };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
-          command = "Hyprland";
-          user = "aless";
-        };
-     };
+        command = "Hyprland";
+        user = "aless";
+      };
+    };
+  };
+
+  # fix dinamically linked executables for other distros
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [ ];
   };
 
   # Some programs need SUID wrappers, can be configured further or are

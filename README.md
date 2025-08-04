@@ -8,7 +8,6 @@
 - setup wlogout
 - setup automatic garbage collection
 - FORMAT ALL THE FILES CORRECTLY
-- finish migrating previous config (especially ld stuff in configuration.nix)
 - consider using yazi
 - create a pokemon-icat flake/package/whatever idk
 - personalize firefox userChrome?
@@ -36,7 +35,7 @@
 
 - remove matugen folder (?)
 - fix the flake for matugen or move the config file somewhere else
-    - maybe move it under nix and allow homemanager to do the symlink?
+  - maybe move it under nix and allow homemanager to do the symlink?
 
 ## matugen
 
@@ -77,4 +76,3 @@
 ## zsh
 
 - understand how to pass the colors to the theme
-
