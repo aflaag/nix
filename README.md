@@ -6,8 +6,6 @@
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout
-- setup automatic garbage collection
-- FORMAT ALL THE FILES CORRECTLY
 - consider using yazi
 - create a pokemon-icat flake/package/whatever idk
 - personalize firefox userChrome?
@@ -19,8 +17,6 @@
 - remove initial message (should be fixed but check it)
 - fix firefox wrt dpi i think?
 - change scroll sensitivity?
-- horizontal scroll is kinda janky
-- add screenshot thing binding
 
 ## hyprlock
 
