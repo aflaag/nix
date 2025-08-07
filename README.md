@@ -14,14 +14,10 @@
 
 ## hyprland
 
+- add commands to move windows around
 - remove initial message (should be fixed but check it)
 - fix firefox wrt dpi i think?
 - change scroll sensitivity?
-
-## hyprlock
-
-- setup the theme
-- migrate to home-manager
 
 ## thunar
 

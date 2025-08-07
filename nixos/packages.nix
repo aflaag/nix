@@ -5,6 +5,7 @@
     # Programs
     firefox
     xfce.thunar
+    xfce.thunar-volman
     pavucontrol
     telegram-desktop
 
@@ -24,7 +25,6 @@
     hyprpicker
     hyprshot
     swappy
-    hyprlock
 
     # CLI utils
     util-linux
@@ -37,6 +37,8 @@
     wl-clipboard
     git
     unzip
+    usbutils
+    gphoto2
 
     nodejs
     python3
