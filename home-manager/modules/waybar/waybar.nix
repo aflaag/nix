@@ -9,6 +9,7 @@
 
       modules-left =
         [ "hyprland/workspaces" "custom/separator" "hyprland/window" ];
+
       modules-right = [
         "group/expand"
         "network"

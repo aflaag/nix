@@ -19,6 +19,11 @@
         touchpad = { natural_scroll = true; };
       };
 
+      misc = {
+        disable_splash_rendering = true;
+        disable_hyprland_logo = true;
+      };
+
       bind = [
         "$mainMod, RETURN, exec, kitty"
         "$mainMod, D, exec, rofi -show drun"
@@ -83,13 +88,13 @@
 
       windowrulev2 = [ "opacity 0.85, class:^(kitty)$" ];
 
-      exec-once = [ "waybar" "hyprlock --immediate" ];
+      exec-once = [ "waybar" "swww restore && hyprlock --immediate" ];
 
       general = {
         "col.active_border" = "$primary";
+
         gaps_in = 5;
         gaps_out = 10;
-
       };
     };
   };

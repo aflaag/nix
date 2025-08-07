@@ -2,24 +2,21 @@
 
 ## general
 
-- CHANGE THE CURSOR
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout
-- consider using yazi
-- create a pokemon-icat flake/package/whatever idk
+- fix pokemon-icat
 - personalize firefox userChrome?
+- move to zen browser?
 - fix tex
 - wtf is `~/.config/rofimoji.rc`
 
 ## hyprland
 
+- CHANGE THE CURSOR
 - add commands to move windows around
-- remove initial message (should be fixed but check it)
-- fix firefox wrt dpi i think?
-- change scroll sensitivity?
 
-## thunar
+## gtk
 
 - make it look decent honestly
 
@@ -35,12 +32,13 @@
 
 ## waybar
 
+- set up audio
+- set up brightness
+- check bluetooth
+- add wlogout module
 - if possible, remove separator when there are no active windows
 - if possible, remove hyprland/window when there are no active windows
 - fix tray menu graphics
-- add wlogout module
-- set up audio
-- check bluetooth
 
 ## dunst
 
