@@ -9,16 +9,10 @@
 - personalize firefox userChrome?
 - move to zen browser?
 - fix tex
-- wtf is `~/.config/rofimoji.rc`
-
-## hyprland
-
-- CHANGE THE CURSOR
-- add commands to move windows around
 
 ## gtk
 
-- make it look decent honestly
+- use matugen colors
 
 ## home-manager
 
@@ -29,6 +23,7 @@
 ## matugen
 
 - make gtk matugen work (post_hook command does not work)
+  - home manager is able to reload gtk so try to understand how they do that
 
 ## waybar
 
@@ -44,16 +39,13 @@
 
 - set up theme
 - matugen colors
+  - it doesn't seem to be doable right away :(
 
 ## rofi
 
 - set up theme
 - matugen colors
-
-## kitty
-
-- make it look decent
-- fix kitty no-cursor shell_integration
+- can i move `~/.config/rofimoji.rc` inside `~/.config/rofi`?!
 
 ## neovim
 

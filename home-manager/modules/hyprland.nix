@@ -35,10 +35,10 @@
         "$mainMod, RIGHT, movefocus, r"
         "$mainMod, UP, movefocus, u"
         "$mainMod, DOWN, movefocus, d"
-        "$mainMod_SHIFT, LEFT, movewindow, l, repeatable"
-        "$mainMod_SHIFT, RIGHT, movewindow, r, repeatable"
-        "$mainMod_SHIFT, UP, movewindow, u, repeatable"
-        "$mainMod_SHIFT, DOWN, movewindow, d, repeatable"
+        "$mainMod_SHIFT, LEFT, swapwindow, l"
+        "$mainMod_SHIFT, RIGHT, swapwindow, r"
+        "$mainMod_SHIFT, UP, swapwindow, u"
+        "$mainMod_SHIFT, DOWN, swapwindow, d"
         "$mainMod, TAB, cyclenext, prev"
         "CTRL_ALT, RIGHT, workspace, +1"
         "CTRL_ALT, LEFT, workspace, -1"
@@ -88,7 +88,11 @@
 
       windowrulev2 = [ "opacity 0.85, class:^(kitty)$" ];
 
-      exec-once = [ "waybar" "swww restore && hyprlock --immediate" ];
+      exec-once = [
+        "waybar"
+        "swww restore && hyprlock --immediate"
+        "hyperctl setcursor Bibata-modern-Classic 17"
+      ];
 
       general = {
         "col.active_border" = "$primary";

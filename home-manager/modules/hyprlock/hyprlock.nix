@@ -3,8 +3,9 @@
     enable = true;
 
     settings = {
-      "source" = "$HOME/.config/hypr/colors.conf";
       "$font" = "Caskaydia Cove NF SemiBold";
+
+      source = "$HOME/.config/hypr/colors.conf";
 
       general = { hide_cursor = true; };
 
