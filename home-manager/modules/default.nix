@@ -1,5 +1,6 @@
 {
   imports = [
+    ./gtk
     ./hyprlock
     ./rofi
     #./matugen
@@ -9,7 +10,6 @@
 
     ./firefox.nix
     ./git.nix
-    ./gtk.nix
     ./gh.nix
     ./hyprland.nix
     ./kitty.nix

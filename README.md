@@ -13,7 +13,7 @@
 
 ## gtk
 
-- use matugen colors
+- finish style.css config (not in use right now)
 
 ## home-manager
 

@@ -1,0 +1,54 @@
+@import "colors.css";
+
+window {
+  background-color: @on_secondary_fixed;
+  color: @primary;
+}
+
+/* Header bar background and text */
+headerbar {
+  background-color: red;
+  color: blue;
+}
+
+/* Popover windows */
+popover {
+  background-color: purple;
+  color: orange;
+}
+
+/* Main view area (like Thunar's file view) */
+.view {
+  background-color: @on_secondary_fixed_variant;
+  color: @primary;
+}
+
+/* Cards or panels */
+.card {
+  background-color: cyan;
+  color: magenta;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: @primary;
+  color: @sidebar_fg_color;
+  border-color: @sidebar_border_color;
+  box-shadow: inset 0 0 10px @sidebar_backdrop_color;
+}
+
+/* Selected item in list or view */
+.view:selected,
+.view:selected:focus {
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+}
+
+/* Accent elements (buttons, links) */
+button,
+entry,
+selection {
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+  border-color: @accent_color;
+}
