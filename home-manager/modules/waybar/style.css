@@ -140,16 +140,11 @@ tooltip {
 }
 
 #battery.warning:not(.charging) {
-  color: @error;
+  color: @on_primary_fixed_variant;
 }
 
 #battery.critical:not(.charging) {
   color: @error_container;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
 #group-expand {

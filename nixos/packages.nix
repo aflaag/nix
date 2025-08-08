@@ -38,6 +38,9 @@
     unzip
     usbutils
     gphoto2
+    file
+    hexyl
+    tldr
 
     nodejs
     python3

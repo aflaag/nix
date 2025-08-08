@@ -115,7 +115,7 @@
         };
         format = "{icon} {capacity}%";
         format-charging = "󰂄 {capacity}%";
-        format-plugged = " {capacity}%";
+        format-plugged = " {capacity}%";
         format-time = "{H}h {M}m";
         format-alt = "{icon} {time}";
         format-icons = [ "󰁻" "󰁼" "󰁾" "󰂀" "󰂂" "󰁹" ];
