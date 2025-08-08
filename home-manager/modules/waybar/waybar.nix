@@ -14,6 +14,8 @@
         "group/expand"
         "network"
         "custom/separator"
+        "wireplumber"
+        "custom/separator"
         "battery"
         "custom/separator"
         "custom/date"
@@ -94,6 +96,14 @@
         format-disconnected = "";
         tooltip = false;
         on-click = "kitty --title KittyNmtui sh -c 'sleep 0.1; nmtui'";
+      };
+
+      wireplumber = {
+        format = "{icon} {volume}%";
+        format-muted = "  muted";
+        on-click = "wpctl set-mute @DEFAULT_SINK@ toggle";
+        format-icons = [ " " " " " " ];
+        reverse-scrolling = true;
       };
 
       battery = {

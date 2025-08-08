@@ -60,11 +60,7 @@
         "$mainMod, 7, workspace, 7"
         "$mainMod, 8, workspace, 8"
         "$mainMod, 9, workspace, 9"
-        ", XF86MonbrightnessUp, exec, brightnessctl set +10%"
-        ", XF86MonbrightnessDown, exec, brightnessctl set 10%-"
-        ", XF86AudioRaiseVolume, exec, pamixer -i 5"
-        ", XF86AudioLowerVolume, exec, pamixer -d 5"
-        ", XF86AudioMute, exec, pamixer -t"
+        ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_SINK@ toggle"
         "CTRL, SPACE, exec, dunstctl close"
         "$mainMod_SHIFT, F, exec, firefox"
         "$mainMod, E, exec, thunar"
@@ -74,6 +70,13 @@
         "$mainMod, S, exec, hyprshot -m region --clipboard-only"
         "$mainMod_ALT, S, exec, hyprshot -m region --raw | swappy -f -"
         "$mainMod_ALT_SHIFT, L, exec, hyprlock & disown && systemctl suspend"
+      ];
+
+      binde = [
+        ", XF86MonbrightnessUp, exec, brightnessctl set +10%"
+        ", XF86MonbrightnessDown, exec, brightnessctl set 10%-"
+        ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%+"
+        ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_SINK@ 5%-"
       ];
 
       bindm = [
@@ -91,7 +94,7 @@
       exec-once = [
         "waybar"
         "swww restore && hyprlock --immediate"
-        "hyperctl setcursor Bibata-modern-Classic 17"
+        "hyperctl setcursor Bibata-Modern-Classic 17"
       ];
 
       general = {

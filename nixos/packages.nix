@@ -8,6 +8,7 @@
     xfce.thunar-volman
     pavucontrol
     telegram-desktop
+    helvum
 
     # Desktkop
     hyprland
@@ -16,10 +17,6 @@
     waybar
     dunst
     libnotify
-    # papirus-icon-theme
-    # juno-theme
-    # adwaita-icon-theme
-    pamixer
     brightnessctl
     gtk3
     gtk4

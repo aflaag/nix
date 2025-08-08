@@ -27,7 +27,6 @@
 
 ## waybar
 
-- set up audio
 - set up brightness
 - check bluetooth
 - add wlogout module
