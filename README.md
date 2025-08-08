@@ -4,7 +4,7 @@
 
 - consider using autocpu-freq
 - consider switching to stable channel
-- setup wlogout
+- setup wlogout (?)
 - fix pokemon-icat
 - personalize firefox userChrome?
 - move to zen browser?
@@ -27,6 +27,7 @@
 
 ## waybar
 
+- battery color between 30 and 20 (i think) is terrible (wtf)
 - set up brightness
 - check bluetooth
 - add wlogout module
@@ -40,12 +41,6 @@
 - matugen colors
   - it doesn't seem to be doable right away :(
 
-## rofi
-
-- set up theme
-- matugen colors
-- can i move `~/.config/rofimoji.rc` inside `~/.config/rofi`?!
-
 ## neovim
 
 - change theme with matugen somehow?
@@ -54,3 +49,7 @@
 ## zsh
 
 - understand how to pass the colors to the theme
+
+## speedcrunch
+
+- matugen (?)

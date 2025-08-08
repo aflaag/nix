@@ -9,6 +9,7 @@
     pavucontrol
     telegram-desktop
     helvum
+    speedcrunch
 
     # Desktkop
     hyprland

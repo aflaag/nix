@@ -24,6 +24,8 @@
         disable_hyprland_logo = true;
       };
 
+      binds = { allow_workspace_cycles = true; };
+
       bind = [
         "$mainMod, RETURN, exec, kitty"
         "$mainMod, D, exec, rofi -show drun"
@@ -39,7 +41,7 @@
         "$mainMod_SHIFT, RIGHT, swapwindow, r"
         "$mainMod_SHIFT, UP, swapwindow, u"
         "$mainMod_SHIFT, DOWN, swapwindow, d"
-        "$mainMod, TAB, cyclenext, prev"
+        "$mainMod, TAB, workspace, previous"
         "CTRL_ALT, RIGHT, workspace, +1"
         "CTRL_ALT, LEFT, workspace, -1"
         "$mainMod_SHIFT, 1, movetoworkspacesilent, 1"
@@ -66,6 +68,7 @@
         "$mainMod, E, exec, thunar"
         "$mainMod, W, exec, waybar"
         "$mainMod_ALT, C, exec, hyprpicker -a"
+        "$mainMod_ALT, E, exec, rofimoji --action copy --skin-tone light"
         ", Print, exec, hyprshot -m output --clipboard-only"
         "$mainMod, S, exec, hyprshot -m region --clipboard-only"
         "$mainMod_ALT, S, exec, hyprshot -m region --raw | swappy -f -"
@@ -94,7 +97,7 @@
       exec-once = [
         "waybar"
         "swww restore && hyprlock --immediate"
-        "hyperctl setcursor Bibata-Modern-Classic 17"
+        "hyprctl setcursor Bibata-Modern-Classic 17"
       ];
 
       general = {

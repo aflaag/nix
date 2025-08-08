@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   programs.rofi = {
     enable = true;
-    theme = "~/nix/home-manager/modules/rofi/gruvbox-material.rasi";
+    theme = "~/nix/home-manager/modules/rofi/style.rasi";
     package = pkgs.rofi-wayland;
     terminal = "${pkgs.kitty}/bin/kitty";
 
@@ -11,6 +11,4 @@
       icon-theme = "Papirus Dark";
     };
   };
-
-  xdg.configFile."rofimoji.rc".text = "	action = copy\n	skin-tone = neutral\n";
 }
