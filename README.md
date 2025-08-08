@@ -2,6 +2,7 @@
 
 ## general
 
+- check packages.nix for both nixos and home-manager!!
 - consider using autocpu-freq
 - consider switching to stable channel
 - setup wlogout (?)
