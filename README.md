@@ -13,6 +13,10 @@
 
 - matugen theme
 
+## btop
+
+- make the theme a little bit better?
+
 ## gtk
 
 - finish style.css config (not in use right now)
