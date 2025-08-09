@@ -9,14 +9,6 @@
 - personalize firefox userChrome?
 - move to zen browser?
 
-## htop
-
-- matugen theme
-
-## btop
-
-- make the theme a little bit better?
-
 ## gtk
 
 - finish style.css config (not in use right now)
@@ -33,7 +25,6 @@
 
 ## waybar
 
-- battery color between 30 and 20 (i think) is terrible (wtf) [CHECK IF FIXED]
 - check bluetooth
 - if possible, remove separator when there are no active windows
 - if possible, remove hyprland/window when there are no active windows
@@ -47,6 +38,14 @@
 ## zsh
 
 - understand how to pass the colors to the theme
+
+## htop
+
+- matugen theme
+
+## btop
+
+- make the theme a little bit better?
 
 ## speedcrunch
 

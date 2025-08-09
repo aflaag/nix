@@ -148,6 +148,7 @@ tooltip {
 }
 
 #battery.warning:not(.charging) {
+  background: none;
   color: @on_primary_fixed_variant;
 }
 
