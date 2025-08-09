@@ -16,6 +16,8 @@
         "custom/separator"
         "wireplumber"
         "custom/separator"
+        "backlight"
+        "custom/separator"
         "battery"
         "custom/separator"
         "custom/date"
@@ -104,6 +106,14 @@
         on-click = "wpctl set-mute @DEFAULT_SINK@ toggle";
         format-icons = [ " " " " " " ];
         reverse-scrolling = true;
+      };
+
+      backlight = {
+        device = "intel_backlight";
+        format = "{icon} {percent}%";
+        format-icons = [ "󰃞" "󰃟" "󰃠" ];
+        reverse-scrolling = true;
+        tooltip = false;
       };
 
       battery = {

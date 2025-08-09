@@ -44,6 +44,8 @@ tooltip {
 #clock:hover,
 #bluetooth:hover,
 #network:hover,
+#wireplumber:hover,
+#backlight:hover,
 #battery:hover,
 #memory:hover,
 #temperature:hover {
@@ -124,6 +126,12 @@ tooltip {
 }
 
 #wireplumber {
+  padding: 0px 5px;
+  transition: all 0.3s ease;
+  color: @secondary;
+}
+
+#backlight {
   padding: 0px 5px;
   transition: all 0.3s ease;
   color: @secondary;

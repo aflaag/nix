@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    home-manager
+    # Flakes
+    # inputs.pokemon-icat.packages.${pkgs.system}.default
 
     # Programs
     firefox
@@ -12,6 +13,7 @@
     speedcrunch
 
     # Desktkop
+    home-manager
     hyprland
     xwayland
     xdg-desktop-portal-hyprland
@@ -30,24 +32,19 @@
     vim
     wget
     tree
-    killall
     htop
-    pfetch
     wl-clipboard
     git
     unzip
     usbutils
     gphoto2
     file
-    hexyl
-    tldr
 
+    # Package Managers
     nodejs
     python3
     cargo
     gcc
-
-    # inputs.pokemon-icat.packages.${pkgs.system}.default
   ];
 
   fonts.packages = with pkgs; [ pkgs.nerd-fonts.caskaydia-cove ];

@@ -5,17 +5,21 @@
     nixpkgs.config.allowUnfree = true;
 
     home.packages = with pkgs; [
-      # desktop
-      rofimoji
+      # Flakes
       inputs.matugen.packages.${system}.default
 
-      # programs
+      # Programs
       neovim
+      rofimoji
 
       # CLI utils
       bat
       fzf
       ripgrep
+      hexyl
+      tldr
+      pfetch
+      btop
     ];
   };
 }
