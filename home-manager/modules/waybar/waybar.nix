@@ -49,11 +49,24 @@
           transition-to-left = true;
           click-to-reveal = true;
         };
-        modules = [ "custom/expand" "bluetooth" "memory" "temperature" ];
+        modules = [
+          "custom/expand"
+          "bluetooth"
+          "custom/separator"
+          "memory"
+          "custom/separator"
+          "temperature"
+          "custom/vertical_separator"
+        ];
       };
 
       "custom/expand" = {
         format = "";
+        tooltip = false;
+      };
+
+      "custom/vertical_separator" = {
+        format = "|";
         tooltip = false;
       };
 
