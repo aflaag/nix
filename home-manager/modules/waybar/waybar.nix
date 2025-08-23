@@ -79,12 +79,17 @@
       };
 
       bluetooth = {
-        format-on = "󰂯";
-        format-off = "BT-off";
-        format-disabled = "󰂲";
+        format-on = "󰂯 Bluetooth ON";
+        format-off = "󰂲 Bluetooth OFF";
+        format-disabled = "󰂲 Controlled disabled";
         format-no-controller = "󰂲 No controller";
-        format-connected-battery = "{device_battery_percentage}% 󰂯";
-        format-alt = "{device_alias} 󰂯";
+        format-connected = "󰂯 {device_alias}";
+        format-connected-battery =
+          "󰂯 {device_alias} ({device_battery_percentage}%)";
+        on-click = ''
+          bluetoothctl show | grep -q "Powered: yes" && bluetoothctl power off || bluetoothctl power on
+        '';
+
         tooltip-format = ''
           {controller_alias}	{controller_address}
 
@@ -102,7 +107,6 @@
           {device_alias}
           {device_address}
           {device_battery_percentage}%'';
-        on-click-right = "blueman-manager";
       };
 
       network = {

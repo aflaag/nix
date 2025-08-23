@@ -4,10 +4,8 @@
 
 - consider using autocpu-freq
 - consider switching to stable channel
-- setup wlogout (?)
 - fix pokemon-icat
 - personalize firefox userChrome?
-- move to zen browser?
 
 ## gtk
 
@@ -25,7 +23,6 @@
 
 ## waybar
 
-- check bluetooth
 - if possible, remove separator when there are no active windows
 - if possible, remove hyprland/window when there are no active windows
 - fix tray menu graphics
