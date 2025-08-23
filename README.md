@@ -4,8 +4,9 @@
 
 - consider using autocpu-freq
 - consider switching to stable channel
+- consider nvf (?)
 - fix pokemon-icat
-- personalize firefox userChrome?
+- personalize firefox userChrome (?)
 
 ## gtk
 
@@ -26,11 +27,6 @@
 - if possible, remove separator when there are no active windows
 - if possible, remove hyprland/window when there are no active windows
 - fix tray menu graphics
-
-## neovim
-
-- change theme with matugen somehow?
-- consider switching to nvf (?)
 
 ## zsh
 
