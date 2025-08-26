@@ -2,7 +2,6 @@
 
 ## general
 
-- consider using autocpu-freq
 - consider switching to stable channel
 - consider nvf (?)
 - fix pokemon-icat
