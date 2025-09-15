@@ -2,7 +2,7 @@
   programs.rofi = {
     enable = true;
     theme = "~/nix/home-manager/modules/rofi/style.rasi";
-    package = pkgs.rofi-wayland;
+    package = pkgs.rofi;
     terminal = "${pkgs.kitty}/bin/kitty";
 
     extraConfig = {
