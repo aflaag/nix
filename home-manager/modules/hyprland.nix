@@ -8,7 +8,7 @@
 
       source = "~/.config/hypr/colors.conf";
 
-      gesture = [ "3, left, workspace," "3, right, workspace," ];
+      gesture = [ "3, horizontal, workspace," ];
 
       ecosystem = { no_update_news = true; };
 
