@@ -1,5 +1,9 @@
 # TODO
 
+# URGENT
+
+- s'è rotta la gesture per i workspace
+
 ## general
 
 - consider switching to stable channel
