@@ -1,5 +1,9 @@
 # TODO
 
+## URGENT
+
+- waybar in carica sopra il 20% c'ha lo sfondo arancione
+
 ## general
 
 - consider switching to stable channel
