@@ -23,6 +23,7 @@
 
 ## matugen
 
+- TRY MATUGEN AGAIN BECAUSE NOW THEY PUSHED AN UPDATE!!!
 - make gtk matugen work (post_hook command does not work)
 
 ## waybar

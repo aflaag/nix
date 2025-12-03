@@ -6,7 +6,7 @@
 
     home.packages = with pkgs; [
       # Flakes
-      inputs.matugen.packages.${system}.default
+      inputs.matugen.packages.${stdenv.hostPlatform.system}.default
 
       # Programs
       neovim
