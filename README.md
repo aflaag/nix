@@ -2,6 +2,7 @@
 
 ## URGENT
 
+- TRY MATUGEN AGAIN BECAUSE NOW THEY PUSHED AN UPDATE!!!
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 
 ## general
@@ -23,7 +24,6 @@
 
 ## matugen
 
-- TRY MATUGEN AGAIN BECAUSE NOW THEY PUSHED AN UPDATE!!!
 - make gtk matugen work (post_hook command does not work)
 
 ## waybar
