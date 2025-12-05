@@ -13,6 +13,7 @@
     ./gh.nix
     ./hyprland.nix
     ./kitty.nix
+    ./zathura.nix
     ./zoxide.nix
   ];
 }
