@@ -1,13 +1,8 @@
 { pkgs, inputs, ... }: {
-  imports = [ inputs.matugen.nixosModules.default ];
-
   config = {
     nixpkgs.config.allowUnfree = true;
 
     home.packages = with pkgs; [
-      # Flakes
-      inputs.matugen.packages.${stdenv.hostPlatform.system}.default
-
       # Programs
       neovim
       rofimoji

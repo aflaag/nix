@@ -2,8 +2,8 @@
   imports = [
     ./gtk
     ./hyprlock
+    ./matugen
     ./rofi
-    #./matugen
     ./swww
     ./waybar
     ./zsh

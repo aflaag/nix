@@ -2,7 +2,6 @@
 
 ## URGENT
 
-- TRY MATUGEN AGAIN BECAUSE NOW THEY PUSHED AN UPDATE!!!
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 
 ## general

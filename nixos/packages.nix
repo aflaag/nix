@@ -1,7 +1,10 @@
 { inputs, pkgs, ... }: {
+  imports = [ inputs.matugen.nixosModules.default ];
+
   environment.systemPackages = with pkgs; [
     # Flakes
     # inputs.pokemon-icat.packages.${pkgs.system}.default
+    inputs.matugen.packages.${stdenv.hostPlatform.system}.default
 
     # Programs
     firefox
