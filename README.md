@@ -2,6 +2,7 @@
 
 ## URGENT
 
+- fixa la wacom che i tasti so sminchiati (forse è un problema del trackpad in realtà)
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 
 ## general
@@ -15,15 +16,9 @@
 
 - finish style.css config (not in use right now)
 
-## home-manager
+## nvim
 
-- remove matugen folder (?)
-- fix the flake for matugen or move the config file somewhere else
-  - maybe move it under nix and allow homemanager to do the symlink?
-
-## matugen
-
-- make gtk matugen work (post_hook command does not work)
+- nvim-tree non so che vuole
 
 ## waybar
 
