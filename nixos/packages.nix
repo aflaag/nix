@@ -8,8 +8,8 @@
 
     # Programs
     firefox
-    xfce.thunar
-    xfce.thunar-volman
+    thunar
+    thunar-volman
     pavucontrol
     telegram-desktop
     helvum
