@@ -2,6 +2,7 @@
 
 ## URGENT
 
+- QUANDO SI ACCENDE ORA NON CHIEDE LA PASSWORD (legato all'update di hyprland 100%)
 - fixa la wacom che i tasti so sminchiati (forse è un problema del trackpad in realtà)
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 
