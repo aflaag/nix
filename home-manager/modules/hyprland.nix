@@ -92,7 +92,7 @@
         ", switch:off:Lid Switch, exec, hyprlock --immediate"
       ];
 
-      windowrulev2 = [ "opacity 0.85, class:^(kitty)$" ];
+      windowrule = [ "opacity 0.85, match:class ^(kitty)$" ];
 
       exec-once = [
         "waybar"
