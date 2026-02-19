@@ -3,7 +3,6 @@
 ## URGENT
 
 - a volte quando si accende non chiede la password
-  - in realtà non è verò, a volte lo fa a volte no, idk
 - fixa la wacom che i tasti so sminchiati (forse è un problema del trackpad in realtà)
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 

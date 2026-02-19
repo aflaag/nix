@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, ... }: {
   programs.firefox = {
     enable = true;
     profiles.default = {
@@ -7,17 +7,16 @@
         "browser.startup.page" = 3;
       };
 
-      extensions.packages =
-        with inputs.firefox-addons.packages."x86_64-linux"; [
-          # missing
-          #   volume-control
+      extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
+        # missing
+        #   volume-control
 
-          bitwarden
-          darkreader
-          simple-tab-groups
-          ublock-origin
-          unpaywall
-        ];
+        bitwarden
+        darkreader
+        simple-tab-groups
+        ublock-origin
+        unpaywall
+      ];
     };
   };
 }

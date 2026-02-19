@@ -9,17 +9,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    matugen.url = "github:InioX/Matugen";
-
-    firefox-addons = {
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+    nur = {
+      url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    matugen.url = "github:InioX/Matugen";
 
     pokemon-icat.url = "github:aflaag/pokemon-icat";
   };
 
-  outputs = { nixpkgs, home-manager, matugen, pokemon-icat, ... }@inputs:
+  outputs = { nixpkgs, home-manager, nur, matugen, pokemon-icat, ... }@inputs:
     let system = "x86_64-linux";
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
@@ -31,7 +31,11 @@
       };
 
       homeConfigurations.aless = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = [ nur.overlays.default ];
+        };
+
         modules = [ ./home-manager/home.nix ];
 
         extraSpecialArgs = { inherit inputs; };
