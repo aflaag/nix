@@ -96,7 +96,7 @@
 
       exec-once = [
         "waybar"
-        "swww restore && hyprlock --immediate"
+        "awww restore && hyprlock --immediate"
         "hyprctl setcursor Bibata-Modern-Classic 17"
       ];
 

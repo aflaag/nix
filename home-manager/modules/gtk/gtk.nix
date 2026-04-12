@@ -31,5 +31,6 @@
     };
 
     # gtk4.extraCss = builtins.readFile ./style.css;
+    gtk4.theme = null;
   };
 }

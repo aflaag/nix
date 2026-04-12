@@ -4,7 +4,7 @@
     ./hyprlock
     ./matugen
     ./rofi
-    ./swww
+    ./awww
     ./waybar
     ./zsh
 

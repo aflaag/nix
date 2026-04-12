@@ -1,6 +1,5 @@
 [config.wallpaper]
-command = "swww"
-arguments = ["img", "--transition-type", "center", "--transition-duration", "1"]
+command = "awww img --transition-type center --transition-duration 1 {{ image }}"
 set = true
 
 [templates.hyprland]

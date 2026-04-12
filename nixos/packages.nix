@@ -12,7 +12,7 @@
     thunar-volman
     pavucontrol
     telegram-desktop
-    helvum
+    crosspipe
     speedcrunch
 
     # Desktkop
