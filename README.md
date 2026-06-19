@@ -2,12 +2,12 @@
 
 ## ULTIMO UPDATE
 
+- a volte quando si accende non chiede la password
 - **RISCRIVI IN LUA HYPRLAND**
 - migrare firefox da `.mozilla/firefox` a `.config/mozilla/firefox`? forse devi aspettare le estensioni
 
 ## URGENT
 
-- a volte quando si accende non chiede la password
 - fixa la wacom che i tasti so sminchiati (forse è un problema del trackpad in realtà)
 - waybar in carica sopra il 20% c'ha lo sfondo arancione
 
