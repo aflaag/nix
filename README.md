@@ -2,9 +2,9 @@
 
 ## ULTIMO UPDATE
 
-- a volte quando si accende non chiede la password
 - **RISCRIVI IN LUA HYPRLAND**
-- migrare firefox da `.mozilla/firefox` a `.config/mozilla/firefox`? forse devi aspettare le estensioni
+- migrare firefox da `.mozilla/firefox` a `.config/mozilla/firefox`?
+  - forse devi aspettare le estensioni
 
 ## URGENT
 

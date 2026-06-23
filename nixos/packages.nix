@@ -14,6 +14,7 @@
     telegram-desktop
     crosspipe
     speedcrunch
+    gimp
 
     # Desktkop
     home-manager

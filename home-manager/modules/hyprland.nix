@@ -91,8 +91,8 @@
       ];
 
       bindl = [
-        ", switch:on:Lid Switch, exec, hyprlock --immediate"
-        ", switch:off:Lid Switch, exec, hyprlock --immediate"
+        ", switch:on:Lid Switch, exec, hyprlock --immediate-render"
+        ", switch:off:Lid Switch, exec, hyprlock --immediate-render"
       ];
 
       windowrule = [ "opacity 0.85, match:class ^(kitty)$" ];
