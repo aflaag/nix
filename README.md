@@ -2,8 +2,6 @@
 
 ## URGENT
 
-- hyprland has been migrated, but colors.conf should be changed to lua through matugen and hyprland.nix should be changed accordingly removing the parser
-
 - migrare firefox da `.mozilla/firefox` a `.config/mozilla/firefox`?
   - forse devi aspettare le estensioni
 

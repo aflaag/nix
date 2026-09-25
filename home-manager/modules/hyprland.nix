@@ -15,13 +15,9 @@ in {
     enable = true;
     xwayland.enable = true;
 
-    # Hyprland >= 0.55
     configType = "lua";
 
     settings = {
-      #
-      # hl.config({...})
-      #
       config = {
         ecosystem = { no_update_news = true; };
 
@@ -43,37 +39,23 @@ in {
           gaps_in = 5;
           gaps_out = 10;
           border_size = 2;
+          layout = "dwindle";
 
-          # col.active_border viene impostato più sotto leggendo
-          # ~/.config/hypr/colors.conf.
+          col = { active_border = lua ''require("colors").primary''; };
         };
       };
 
-      #
-      # hl.gesture({...})
-      #
       gesture = {
         fingers = 3;
         direction = "horizontal";
         action = "workspace";
       };
 
-      #
-      # hl.bind(...)
-      #
       bind = [
-        # Programs
         (mkBind "${mainMod} + RETURN" ''hl.dsp.exec_cmd("kitty")'')
 
         (mkBind "${mainMod} + D" ''hl.dsp.exec_cmd("rofi -show drun")'')
 
-        (mkBind "${mainMod} + SHIFT + F" ''hl.dsp.exec_cmd("firefox")'')
-
-        (mkBind "${mainMod} + E" ''hl.dsp.exec_cmd("thunar")'')
-
-        (mkBind "${mainMod} + W" ''hl.dsp.exec_cmd("waybar")'')
-
-        # Window management
         (mkBind "${mainMod} + Q" "hl.dsp.window.close()")
 
         (mkBind "${mainMod} + F"
@@ -84,7 +66,6 @@ in {
 
         (mkBind "${mainMod} + CTRL + Y" "hl.dsp.window.pin()")
 
-        # Focus
         (mkBind "${mainMod} + LEFT" ''hl.dsp.focus({ direction = "left" })'')
 
         (mkBind "${mainMod} + RIGHT" ''hl.dsp.focus({ direction = "right" })'')
@@ -93,7 +74,6 @@ in {
 
         (mkBind "${mainMod} + DOWN" ''hl.dsp.focus({ direction = "down" })'')
 
-        # Swap windows
         (mkBind "${mainMod} + SHIFT + LEFT"
           ''hl.dsp.window.swap({ direction = "left" })'')
 
@@ -106,14 +86,12 @@ in {
         (mkBind "${mainMod} + SHIFT + DOWN"
           ''hl.dsp.window.swap({ direction = "down" })'')
 
-        # Workspace navigation
         (mkBind "${mainMod} + TAB" ''hl.dsp.focus({ workspace = "previous" })'')
 
         (mkBind "CTRL + ALT + RIGHT" ''hl.dsp.focus({ workspace = "+1" })'')
 
         (mkBind "CTRL + ALT + LEFT" ''hl.dsp.focus({ workspace = "-1" })'')
 
-        # Move window silently to workspace
         (mkBind "${mainMod} + SHIFT + 1"
           "hl.dsp.window.move({ workspace = 1, follow = false })")
 
@@ -141,7 +119,6 @@ in {
         (mkBind "${mainMod} + SHIFT + 9"
           "hl.dsp.window.move({ workspace = 9, follow = false })")
 
-        # Switch workspace
         (mkBind "${mainMod} + 1" "hl.dsp.focus({ workspace = 1 })")
 
         (mkBind "${mainMod} + 2" "hl.dsp.focus({ workspace = 2 })")
@@ -160,20 +137,22 @@ in {
 
         (mkBind "${mainMod} + 9" "hl.dsp.focus({ workspace = 9 })")
 
-        # Audio mute
         (mkBind "XF86AudioMute"
           ''hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_SINK@ toggle")'')
 
-        # Dunst
         (mkBind "CTRL + SPACE" ''hl.dsp.exec_cmd("dunstctl close")'')
 
-        # Picker / emoji
+        (mkBind "${mainMod} + SHIFT + F" ''hl.dsp.exec_cmd("firefox")'')
+
+        (mkBind "${mainMod} + E" ''hl.dsp.exec_cmd("thunar")'')
+
+        (mkBind "${mainMod} + W" ''hl.dsp.exec_cmd("waybar")'')
+
         (mkBind "${mainMod} + ALT + C" ''hl.dsp.exec_cmd("hyprpicker -a")'')
 
         (mkBind "${mainMod} + ALT + E"
           ''hl.dsp.exec_cmd("rofimoji --action copy --skin-tone light")'')
 
-        # Screenshots
         (mkBind "Print"
           ''hl.dsp.exec_cmd("hyprshot -m output --clipboard-only")'')
 
@@ -183,13 +162,9 @@ in {
         (mkBind "${mainMod} + ALT + S"
           ''hl.dsp.exec_cmd("hyprshot -m region --raw | swappy -f -")'')
 
-        # Suspend
         (mkBind "${mainMod} + ALT + SHIFT + L"
           ''hl.dsp.exec_cmd("hyprlock & disown && systemctl suspend")'')
 
-        #
-        # Repeating binds: old binde
-        #
         (mkBindFlags "XF86MonBrightnessUp"
           ''hl.dsp.exec_cmd("brightnessctl set +10%")'' { repeating = true; })
 
@@ -206,9 +181,6 @@ in {
             repeating = true;
           })
 
-        #
-        # Mouse binds: old bindm
-        #
         (mkBindFlags "${mainMod} + mouse:272" "hl.dsp.window.drag()" {
           mouse = true;
         })
@@ -217,9 +189,6 @@ in {
           mouse = true;
         })
 
-        #
-        # Lid switch: old bindl
-        #
         (mkBindFlags "switch:on:Lid Switch"
           ''hl.dsp.exec_cmd("hyprlock --immediate-render")'' { locked = true; })
 
@@ -227,10 +196,6 @@ in {
           ''hl.dsp.exec_cmd("hyprlock --immediate-render")'' { locked = true; })
       ];
 
-      #
-      # Old:
-      # windowrule = [ "opacity 0.85, match:class ^(kitty)$" ];
-      #
       window_rule = {
         name = "kitty-opacity";
 
@@ -239,12 +204,6 @@ in {
         opacity = "0.85";
       };
 
-      #
-      # Old exec-once.
-      #
-      # Do NOT use settings.exec-once with configType = "lua":
-      # that would try to generate an invalid hl.exec-once(...).
-      #
       on = {
         _args = [
           "hyprland.start"
@@ -259,64 +218,5 @@ in {
         ];
       };
     };
-
-    #
-    # Temporary compatibility layer for the existing Matugen-generated
-    # ~/.config/hypr/colors.conf.
-    #
-    # The old file contains something like:
-    #
-    #   $primary = rgba(...)
-    #
-    # which is Hyprlang and therefore cannot be require()'d from Lua.
-    #
-    extraConfig = ''
-      -- Compatibility with the old Matugen Hyprlang colors.conf.
-      do
-        local home = os.getenv("HOME")
-        local primary = nil
-
-        if home ~= nil then
-          local path = home .. "/.config/hypr/colors.conf"
-          local file = io.open(path, "r")
-
-          if file ~= nil then
-            for line in file:lines() do
-              local value =
-                line:match("^%s*%$primary%s*=%s*(.-)%s*$")
-
-              if value ~= nil then
-                -- Remove a possible trailing Hyprlang comment.
-                value = value:gsub("%s*#.*$", "")
-                value = value:match("^%s*(.-)%s*$")
-
-                if value ~= "" then
-                  primary = value
-                end
-
-                break
-              end
-            end
-
-            file:close()
-          end
-        end
-
-        if primary ~= nil then
-          hl.config({
-            general = {
-              col = {
-                active_border = primary,
-              },
-            },
-          })
-        else
-          print(
-            "[hyprland] warning: could not read $primary "
-              .. "from ~/.config/hypr/colors.conf"
-          )
-        end
-      end
-    '';
   };
 }
