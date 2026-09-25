@@ -6,6 +6,7 @@
       # Programs
       neovim
       rofimoji
+      codex
 
       # CLI utils
       bat

@@ -3,12 +3,12 @@
     enable = true;
     theme = "~/nix/home-manager/modules/rofi/style.rasi";
     package = pkgs.rofi;
-    terminal = "${pkgs.kitty}/bin/kitty";
 
-    extraConfig = {
+    settings = {
       show-icons = true;
       font = "CaskaydiaCove Nerd Font 12";
       icon-theme = "Papirus Dark";
+      terminal = "${pkgs.kitty}/bin/kitty";
     };
   };
 }
