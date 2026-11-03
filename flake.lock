@@ -46,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790955005,
-        "narHash": "sha256-EEQKUylD8zuRTmDFX4rbwsHQ+iZhqqOldYcFN8SLcE0=",
+        "lastModified": 1793193205,
+        "narHash": "sha256-X6xa6sGA7RnJQuZGbFMC+K+KToWAlBDCCjJXfTwEPsw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "0560d64401a6d5370732a69d08bc4a6b135962d9",
+        "rev": "095fef2f265c3c0da4fe315efba8f8a04495ab34",
         "type": "github"
       },
       "original": {
@@ -65,11 +65,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1789910191,
-        "narHash": "sha256-xt16rUkAM4NztPn+eihGB0k1mChcq729jwK/0zler3c=",
+        "lastModified": 1793551589,
+        "narHash": "sha256-Tzx2PvzacBBxS07oBd3Dz3apIwn8tvX8wt1IK9efrwA=",
         "owner": "InioX",
         "repo": "Matugen",
-        "rev": "ca94b8b03c26199158a187f3388a0c61f8802b0e",
+        "rev": "788f38e4622b4b041bd85e58330087566d715d22",
         "type": "github"
       },
       "original": {
@@ -96,11 +96,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1790822859,
-        "narHash": "sha256-69xHQhAeMAD2wDXO7T2pcOZIF9Sga2W+JkmY2a11Ops=",
+        "lastModified": 1793540411,
+        "narHash": "sha256-fiPJ88izTVucjeo2EQ3jk4aWmLg03I1D4vxnX2QjEgE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+        "rev": "0bb2eedc20e4739f29e8045034f2828ad7054f8f",
         "type": "github"
       },
       "original": {
@@ -134,11 +134,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790955702,
-        "narHash": "sha256-/LhB6cEuKqTqI2dRNBfcsLto/1FqHOZg/sAABzYcDR4=",
+        "lastModified": 1793706821,
+        "narHash": "sha256-ieetCvF3tiRirXjlqYR0rGSCx70GyfCkZ15AHXELtGw=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "fb9e68300591c66cbfe10bf86212a5d5838710c5",
+        "rev": "b271e4bf2f41817e037126de0f372380428e2bec",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1754236383,
-        "narHash": "sha256-8mAv51WHB/h067Pma7mdyBQ4Equzj27/oYqZKp/IHO0=",
+        "lastModified": 1793263732,
+        "narHash": "sha256-QRdumb1j4FgJwlp0NuNKv2SGGUFM+rjsZJX4doOKIYA=",
         "owner": "aflaag",
         "repo": "pokemon-icat",
-        "rev": "54d4bc500f8668c0759aad2588940cdc8dd1d6f5",
+        "rev": "c460e2851bdd3a41811bd59507549a650d036a9f",
         "type": "github"
       },
       "original": {

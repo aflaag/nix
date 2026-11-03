@@ -56,7 +56,16 @@
 
   console.useXkbConfig = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    max-jobs = 1;
+    cores = 1;
+  };
+
+  swapDevices = [{
+    device = "/swapfile";
+    size = 4 * 1024;
+  }];
 
   xdg.portal = {
     enable = true;
