@@ -163,7 +163,7 @@ in {
           ''hl.dsp.exec_cmd("hyprshot -m region --raw | swappy -f -")'')
 
         (mkBind "${mainMod} + ALT + SHIFT + L"
-          ''hl.dsp.exec_cmd("hyprlock & disown && systemctl suspend")'')
+          ''hl.dsp.exec_cmd("systemctl suspend")'')
 
         (mkBindFlags "XF86MonBrightnessUp"
           ''hl.dsp.exec_cmd("brightnessctl set +10%")'' { repeating = true; })
@@ -190,10 +190,10 @@ in {
         })
 
         (mkBindFlags "switch:on:Lid Switch"
-          ''hl.dsp.exec_cmd("hyprlock --immediate-render")'' { locked = true; })
+          ''hl.dsp.exec_cmd("hyprlock")'' { locked = true; })
 
         (mkBindFlags "switch:off:Lid Switch"
-          ''hl.dsp.exec_cmd("hyprlock --immediate-render")'' { locked = true; })
+          ''hl.dsp.exec_cmd("hyprlock")'' { locked = true; })
       ];
 
       window_rule = {
@@ -211,7 +211,8 @@ in {
           (lua ''
             function()
               hl.exec_cmd("waybar")
-              hl.exec_cmd("awww restore && hyprlock --immediate")
+              hl.exec_cmd("awww restore")
+              hl.exec_cmd("hyprlock")
               hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic 17")
             end
           '')

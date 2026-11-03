@@ -15,6 +15,10 @@
 - fix pokemon-icat
 - personalize firefox userChrome (?)
 
+## matugen
+
+- fixare gli errori
+
 ## gtk
 
 - finish style.css config (not in use right now)
@@ -24,10 +28,6 @@
 - if possible, remove separator when there are no active windows
 - if possible, remove hyprland/window when there are no active windows
 - fix tray menu graphics
-
-## zsh
-
-- understand how to pass the colors to the theme
 
 ## htop
 
